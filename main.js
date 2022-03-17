@@ -65,7 +65,7 @@ window.onload = () => {
         song_artist_el.innerText = song.artist;
 
         //next musique
-        song_next_up_el.innerText = songs[next_song_index].title + " by " + songs[next_song_index].artist;
+        song_next_up_el.innerText = songs[next_song_index].title + " - " + songs[next_song_index].artist;
 
         //lecteur audio (musique play)
         audio_player.src = song.song_path;
