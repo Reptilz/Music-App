@@ -41,8 +41,11 @@ window.onload = () => {
 
     ];
 
+    //call des fonctions...
     play_btn.addEventListener('click', togglePlaySong);
-
+    next_btn.addEventListener('click', () => changeSong());
+    prev_btn.addEventListener('click', () => changeSong(false));
+    
     initPlayer();
 
     //fonction qui prend l'index(play), et qui l'incrémente de +1 (next)
@@ -62,7 +65,7 @@ window.onload = () => {
         song_artist_el.innerText = song.artist;
 
         //next musique
-        song_next_up_el.innerText = songs[next_song_index].title + " by " + songs[next_song_index].artist;
+        song_next_up_el.innerText = songs[next_song_index].title + " - " + songs[next_song_index].artist;
 
         //lecteur audio (musique play)
         audio_player.src = song.song_path;
@@ -80,5 +83,35 @@ window.onload = () => {
             play_btn_icon.classList.add('fa-play');
             play_btn_icon.classList.remove('fa-pause');
         }
+    }
+
+    //fonction qui passe de musique...
+    function changeSong(next = true) {
+        //next btn (next=true)
+        if(next){
+            current_song_index++;
+            next_song_index = current_song_index + 1;
+
+            if(current_song_index > songs.length - 1){
+                current_song_index = 0;
+                next_song_index = current_song_index + 1;
+            }
+
+            if(next_song_index > songs.length - 1){
+                next_song_index = 0;
+            }
+            //previous btn (next=false)
+        } else {
+            current_song_index--;
+            next_song_index = current_song_index + 1;
+
+            if(current_song_index < 0){
+                current_song_index = songs.length - 1;
+                next_song_index = 0;
+            }
+        }
+
+        updatePlayer();
+        togglePlaySong();
     }
 }
