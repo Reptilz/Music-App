@@ -40,15 +40,27 @@ window.onload = () => {
         },
         {
             title: 'Is There Someone Else?',
-            artist: 'The Weeknd - Dawn FM',
+            artist: 'The Weeknd',
             song_path: 'music/the-weeknd-is-there-someone-else-official-audio.mp3',
             img_path: 'images/dawnfm.png'
         },
         {
             title: 'The Color Violet',
-            artist: 'Tory Lanez - Alone At Prom',
+            artist: 'Tory Lanez',
             song_path: 'music/tory-lanez-the-color-violet-official-audio.mp3',
             img_path: 'images/aloneatprom.png'
+        },
+        {
+            title: 'Hurricane',
+            artist: 'Kanye West ft. The Weeknd & Lil Baby',
+            song_path: 'music/kanye-west-hurricane-audio.mp3',
+            img_path: 'images/donda.png'
+        },
+        {
+            title: 'Goosebumps',
+            artist: 'Travis Scott',
+            song_path: 'music/goosebumps.mp3',
+            img_path: 'images/Birds-In-The-Trap-Sing-McKnight.jpg'
         },
 
     ];
