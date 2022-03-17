@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #EEE;
+    background-color: #000000;
 }
 
 .app-wrapper {
@@ -17,12 +17,13 @@ body {
 }
 
 .player {
-    background-color: #FFFFFF;
+    margin: 50px 0 50px 0;
+    background-color: #121212;
     padding: 100px 50px;
     width: 414px;
     max-width: 100%;
     border-radius: 16px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 6px #1FDF64;
 }
 
 .song-img {
@@ -32,7 +33,7 @@ body {
     width: 200px;
     background-color: #FE4880;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 8px #1FDF64;
     margin-bottom: 50px;
 
     background-position: center;
@@ -66,7 +67,7 @@ body {
 .song-details h2 {
     font-size: 24px;
     font-weight: 600;
-    color: #313131;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 
@@ -90,7 +91,7 @@ body {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: #FE4880;
+    background-color: #1FDF64;
     color: #FFF;
     margin: 0 30px;
 
@@ -99,7 +100,7 @@ body {
     outline: none;
     cursor: pointer;
 
-    box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+    box-shadow: 0px 6px 12px rgba(7, 153, 80, 0.5);
     transition: 0.4s;
 }
 
@@ -114,11 +115,11 @@ body {
 }
 
 .player-controls .play:hover {
-    box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+    box-shadow: 0px 8px 16px rgba(22, 197, 109, 0.671);
 }
 
 .next-up p {
-    color: #888;
+    color: rgba(136, 136, 136, 0.699);
     text-align: center;
     font-weight: 500;
     font-size: 16px;
