@@ -130,11 +130,20 @@ body {
     text-align: center;
     font-weight: 500;
     font-size: 16px;
+    font-weight: bold;
+    margin-top: 180px;
 }
 
 .next-up p span {
     font-weight: 400;
     font-style: italic;
+}
+
+#music-player{
+    opacity: .3;
+    position: relative;
+    top: 510px;
+    width: 100%;
 }
 
 @media (max-width: 414px) {

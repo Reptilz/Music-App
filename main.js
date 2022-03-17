@@ -37,7 +37,19 @@ window.onload = () => {
             artist: 'Future ft. The Weeknd',
             song_path: 'music/future-comin-out-strong-feat-the-weeknd.mp3',
             img_path: 'images/comin-out-strong.jpg'
-        }
+        },
+        {
+            title: 'Is There Someone Else?',
+            artist: 'The Weeknd - Dawn FM',
+            song_path: 'music/the-weeknd-is-there-someone-else-official-audio.mp3',
+            img_path: 'images/dawnfm.png'
+        },
+        {
+            title: 'The Color Violet',
+            artist: 'Tory Lanez - Alone At Prom',
+            song_path: 'music/tory-lanez-the-color-violet-official-audio.mp3',
+            img_path: 'images/aloneatprom.png'
+        },
 
     ];
 
