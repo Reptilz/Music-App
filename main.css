@@ -7,17 +7,11 @@
 
 body {
     background-color: #000000;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:"list player player player player";
-    margin-right: auto;
-    margin-left: auto;
+
 }
 
 
 .app-wrapper {
-    margin-right: 300px;
-    grid-area: player;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,13 +152,6 @@ body {
 
 /******* LIBRARY *******/
 .library {
-    margin-left: 300px;
-    grid-area: list;
-    color: white;
-    width: 200px;
-    max-width: 100%;
-    border-radius: 16px;
-    box-shadow: 0px 2px 6px white;
 }
 
 
