@@ -146,7 +146,9 @@ body {
     width: 100%;
     transition: .4s;
 }
-//medias
+
+
+/**medias**/
 @media (max-width: 414px) {
     .player {
         min-height: 100vh;
