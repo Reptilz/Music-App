@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lecteur audio">
     <meta name="author" content="Jordan Morlet">
-    <title>Stopify Music</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./icons/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
+
+    <title>Stopify Music</title>
+
 </head>
 <body>
     <!-------LECTEUR AUDIO------->
+    
     <div class="app-wrapper">
         <div class="player">
+    <!-------BIBLIOTHEQUES------->
+    <div class="library">
+        <h4>List of Songs</h4>
+        <div class="list-songs">
+            <div class="song">
+                <div class="title-artist-song">
+                    <h5 id="title">Baby Are You Home</h5>
+                    <p id="artist">Lil Uzi Vert</p>
+                </div>
+                <button id="play-btn-library" class="play"><i id="play-icon-library" class="fas fa-play fa-2x"></i></button>
+            </div>
+        </div>
+
             <audio controls id="music-player"></audio>
             <div id="song-image" class="song-img" style="background-image: url('./images/LilUziVert-BabyAreYouHome.jpg');"></div>
             <div class="song-details">
@@ -29,53 +45,6 @@
                 <p>Next up: <span id="song-next-up">Lil Uzi Vert - Heart in Pieces</span></p>
             </div>
         </div>
-    </div>
-
-    <!-------BIBLIOTHEQUES------->
-    <div class="library">
-        <h4>List of Songs</h4>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div>
-        <div class="list-songs">
-            <div class="song">
-                <h5 id="title">Baby Are You Home</h5>
-                    <p id="artist">Lil Uzi Vert</p>
-            </div>
-        </div> 
     </div>
     <script src="main.js"></script>
 </body>

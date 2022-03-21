@@ -8,6 +8,8 @@ window.onload = () => {
     //Selectionne les boutons
     const play_btn = document.getElementById('play-btn');
     const play_btn_icon = document.getElementById('play-icon');
+    const play_btn_library = document.getElementById('play-btn-library');
+    const play_btn_icon_library = document.getElementById('play-icon-library');
     const prev_btn = document.getElementById('prev-btn');
     const next_btn = document.getElementById('next-btn');
 
@@ -67,6 +69,7 @@ window.onload = () => {
 
     //call des fonctions...
     play_btn.addEventListener('click', togglePlaySong);
+    play_btn_library.addEventListener('click', togglePlaySong);
     next_btn.addEventListener('click', () => changeSong());
     prev_btn.addEventListener('click', () => changeSong(false));
     
@@ -102,10 +105,14 @@ window.onload = () => {
             audio_player.play();
             play_btn_icon.classList.remove('fa-play');
             play_btn_icon.classList.add('fa-pause');
+            play_btn_icon_library.classList.remove('fa-play');
+            play_btn_icon_library.classList.add('fa-pause');
         } else {
             audio_player.pause();
             play_btn_icon.classList.add('fa-play');
             play_btn_icon.classList.remove('fa-pause');
+            play_btn_icon_library.classList.add('fa-play');
+            play_btn_icon_library.classList.remove('fa-pause');
         }
     }
 

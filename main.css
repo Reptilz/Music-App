@@ -9,6 +9,61 @@ body {
     background-color: #000000;
 }
 
+.library {
+    position: relative;
+    bottom: 50px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #ffff;
+    width: 100%;
+    text-align: center;
+}
+
+.song {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 15px;
+    display: grid;
+
+}
+
+.song h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.song p {
+    font-style: italic;
+}
+
+.list-songs .play {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1FDF64;
+    color: #FFF;
+    font-size: .4rem;
+    margin-left: 20px;
+
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    grid-area: 1 / 5 / 2 / 6;
+
+    box-shadow: 0px 6px 12px rgba(7, 153, 80, 0.5);
+}
+
+.song:not(:first-child) {
+    display:none;
+}
+
+
+
+.library h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
 
 .app-wrapper {
     display: flex;
@@ -147,6 +202,7 @@ body {
     width: 100%;
     transition: .4s;
 }
+
 
 
 /******* LIBRARY *******/
